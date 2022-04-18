@@ -17,15 +17,15 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Modelagem de banco de dados</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Criação de funções e procedures</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Criação de jobs</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
@@ -44,13 +44,13 @@ const Services = () => {
         {/* END OF BANCO DE DADOS */}
         <article className="service">
           <div className="service__head">
-            <h3>Desenvolvimento Web</h3>
+            <h3>BackEnd</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Criação de Rest Apis</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
@@ -81,7 +81,7 @@ const Services = () => {
         {/* END OF WEB DEVELOP */}
         <article className="service">
           <div className="service__head">
-            <h3>BackEnd</h3>
+            <h3>Desenvolvimento Web</h3>
           </div>
 
           <ul className='service__list'>
