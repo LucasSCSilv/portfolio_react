@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/me.png'
+import img from '../../assets/progamming.gif'
 import HeaderSocials from './HeaderSocials'
 
 const Header = () => {
@@ -14,10 +14,26 @@ const Header = () => {
         <CTA />
         <HeaderSocials />
 
-        <div className="me">
+        {/* <div className="me">
           <img className="img" src={ME} alt="me" />
+        </div> */}
+
+        <div id='home' className='container home-container'>
+          <div className='logo'>
+            <div className="main-img" onClick={UserLogin}>
+              <span className="circle"></span>
+              <span className="circle"></span>
+              <span className="circle"></span>
+              <span className="circle"></span>
+              <span className="circle"></span>
+              <span className="circle"></span>
+              <span className="circle"></span>
+              <span className="circle"></span>
+            </div>
+            <img src={img} alt='' />
+          </div>
         </div>
-        
+
         <a href="#contact" className='scroll__down'> Arraste para baixo </a>
 
       </div>
@@ -25,5 +41,12 @@ const Header = () => {
 
   )
 }
+
+function UserLogin() {
+  const toggle = document.querySelector('.main-img');
+  toggle.classList.toggle('active')
+
+}
+
 
 export default Header
