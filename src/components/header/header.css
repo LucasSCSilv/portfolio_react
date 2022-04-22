@@ -58,22 +58,236 @@ header {
     font-size: 0.9rem;
 }
 
+/* SPIN */
+.home-container{
+    position: relative;
+    min-height: 76vh;
+    /* padding: 50px 40px;
+    margin-top: 7px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home-container .logo{
+    position: inherit;
+    /* margin-top: -50px; */
+    height: 520px;
+    width: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.home-container .logo .main-img{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.home-container .logo .main-img.active{
+    animation: spin 25s linear 1s infinite;
+    /* animation: spin 25s linear 1s infinite; */
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.home-container .logo .circle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(4, 4, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    opacity: 0;
+}
+
+.home-container .logo .main-img.active .circle{
+    opacity: 1;
+}
+
+.home-container .logo .main-img.active .circle:nth-child(1){
+    background: url(../../assets/nodeJs.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(-210%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(2){
+    background: url(../../assets/csharp.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(150%, -150%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(3){
+    background: url(../../assets/pythonLogo.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(210%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(4){
+    background: url(../../assets/sql.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(150%, 150%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(5){
+    background: url(../../assets/mongo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(210%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(6){
+    background: url(../../assets/css.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(7){
+    background: url(../../assets/html.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateX(-210%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(8){
+    background: url(../../assets/reactjs.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-150%, -150%);
+}
+
+.home-container img{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid rgb(108, 161, 197);
+    transform: translate(-200px);
+    opacity: 0;
+    animation: fade-in 1s ease 1 0.5s forwards;
+}
+
+@keyframes fade-in{
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
 
 /* APARELHOS MÉDIOS - RESPONSIVEL */
 @media screen and (max-width: 1024px) {
     header{
-        height: 68vh;
+        height: 83vh;
+        /* height: 68vh; */
     }
-
 }
 
 /* APARELHOS PEQUENOS - RESPONSIVEL */
 @media screen and (max-width: 600px) {
     header{
-        height: 100vh;
+        height: 104vh;
+        /* height: 100vh; */
     }
     
     .header__socials, .scroll__down{
+        display: none;
+    }
+}
+
+/* SPIN TABLETS - IPAD MINI*/
+@media screen and (width: 768px) {
+    .home-container{
+        min-height: 53vh;
+    }
+}
+
+/* SPIN TABLETS - IPAD AIR*/
+@media screen and (width: 820px) {
+    .home-container{
+        min-height: 60vh;
+    }
+}
+
+/* SPIN TABLETS - NEST HUB MAX*/
+@media screen and (width: 1280px) {
+    .home-container{
+        min-height: 64vh;
+    }
+
+    .home-container img{
+        height: 219px;
+        width: 219px;
+    }
+
+    .home-container .logo .circle {
+        height: 83px;
+        width: 83px;
+    }
+}
+
+/* SPIN TABLETS - NEST HUB*/
+@media screen and (width: 1024px) {
+    .home-container{
+        display: none;
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 500px) {
+    .home-container {
+        min-height: 60vh;
+    }
+
+    .home-container .logo{
+        height: 355px;
+    }
+
+    .home-container img{
+        height: 210px;
+        width: 210px;
+    }
+
+    .home-container .logo .circle{
+        height: 66px;
+        width: 66px;
+    }
+}
+
+
+/* GALAXY FOLD */
+@media screen and (width: 280px) {
+    .home-container{
         display: none;
     }
 }
