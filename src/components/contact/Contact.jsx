@@ -11,11 +11,15 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_7atqz3j', 'template_0ng6kof', form.current, 'MO2Ocwft0xHJ-uOni')
+    emailjs.sendForm('service_ul49jnl', 'template_0ng6kof', form.current, 'MO2Ocwft0xHJ-uOni')
       .then((result) => {
-          console.log(result.text);
+          if(result.text === 'OK'){
+            alert('E-mail enviado com sucesso! Em breve entrarei em contato')
+          }
       }, (error) => {
-          console.log(error.text);
+          if(error.text) {
+            alert('Algo deu errado com o envio do e-mail, me envie uma mensagem via WhatsApp')
+          }
       });
 
     e.target.reset()

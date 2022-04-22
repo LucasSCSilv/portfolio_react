@@ -18,7 +18,7 @@ const Footer = () => {
 
     <div className='footer__socials'>
       <a href="https://instagram.com"><FiInstagram /></a>
-      <a href="https://linkedin.com"><SiLinkedin /></a>
+      <a href="https://www.linkedin.com/in/lucas-samuel-8641b0186/"><SiLinkedin /></a>
     </div>
 
     <div className="footer__copyright">

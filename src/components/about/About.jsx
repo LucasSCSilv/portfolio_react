@@ -22,11 +22,11 @@ const About = () => {
           <div className="about__cards">
             <article className='about__card'>
               <FaAward className='about__icon' />
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <h5>Experiência</h5>
+              <small>+1 ano atuando na área</small>
             </article>
 
-            <article className='about__card'>
+            {/* <article className='about__card'>
               <FiUsers className='about__icon' />
               <h5>Clients</h5>
               <small>200+ Worldwide</small>
@@ -36,12 +36,11 @@ const About = () => {
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
               <small>80+ Completed projects</small>
-            </article>
+            </article> */}
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sapiente officia quia officiis in aperiam corrupti iste.
-            Ad, reprehenderit fuga, repellat, ducimus odio earum natus adipisci quae laborum architecto maxime!
+            Meu nome é Lucas, tenho 23 anos. Amante de tecnologia e da programação. Desenvolvedor back-end com experiência em criação de Web API's.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Me mande uma mensagem</a>
