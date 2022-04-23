@@ -21,9 +21,9 @@ const Footer = () => {
       <a href="https://www.linkedin.com/in/lucas-samuel-8641b0186/"><SiLinkedin /></a>
     </div>
 
-    <div className="footer__copyright">
+    {/* <div className="footer__copyright">
       <small>&copy; Lucas</small>
-    </div>
+    </div> */}
     </footer>
   )
 }
