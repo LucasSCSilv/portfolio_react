@@ -56,6 +56,10 @@ const Services = () => {
               <BiCheck className='service__list-icon' />
               <p>Implementações de regra de negócio</p>
             </li>
+            <li>
+              <BiCheck className='service__list-icon' />
+              <p>Criação de robôs para automatizações de processos</p>
+            </li>
           </ul>
         </article>
         {/* END OF WEB DEVELOP */}
@@ -75,7 +79,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Tratariva de dados</p>
+              <p>Tratativa de dados</p>
             </li>
           </ul>
         </article>
