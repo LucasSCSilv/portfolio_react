@@ -1,31 +1,32 @@
 import React from 'react'
 import './services.css'
 import {BiCheck} from 'react-icons/bi'
+import {i18n} from '../translate/i18n'
 
 const Services = () => {
   return (
     <section id='services'>
-      <h5>O que eu faço</h5>
-      <h2>Serviços</h2>
+      <h5>{i18n.t('services.whatIDo')}</h5>
+      <h2>{i18n.t('services.services')}</h2>
 
       <div className='container services__container'>
         <article className="service">
           <div className="service__head">
-            <h3>Banco de Dados</h3>
+            <h3>{i18n.t('services.dataBase')}</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Modelagem de banco de dados</p>
+              <p>{i18n.t('services.databaseModeling')}</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Criação de funções e procedures</p>
+              <p>{i18n.t('services.functionprocedures')}</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Criação de jobs</p>
+              <p>{i18n.t('services.jobs')}</p>
             </li>
           </ul>
         </article>
@@ -38,48 +39,48 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Criação de Rest Apis</p>
+              <p>{i18n.t('services.restApis')}</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Integração com API's</p>
+              <p>{i18n.t('services.integrationApi')}</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Conexão com múltiplas bases de dados</p>
+              <p>{i18n.t('services.multipleDataBase')}</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Segurança de dados</p>
+              <p>{i18n.t('services.security')}</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Implementações de regra de negócio</p>
+              <p>{i18n.t('services.rulesBusiness')}</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Criação de robôs para automatizações de processos</p>
+              <p>{i18n.t('services.bots')}</p>
             </li>
           </ul>
         </article>
         {/* END OF WEB DEVELOP */}
         <article className="service">
           <div className="service__head">
-            <h3>Desenvolvimento Web</h3>
+            <h3>{i18n.t('services.webDevelopment')}</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Criação de WebSites responsivos</p>
+              <p>{i18n.t('services.sites')}</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Conexão com API</p>
+              <p>{i18n.t('services.conectionApi')}</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Tratativa de dados</p>
+              <p>{i18n.t('services.formatingData')}</p>
             </li>
           </ul>
         </article>
