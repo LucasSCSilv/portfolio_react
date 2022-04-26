@@ -4,12 +4,13 @@ import ME from '../../assets/me-about.jpg'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import { i18n } from '../translate/i18n'
 
 const About = () => {
   return (
     <section id='about'>
-      <h5>Saiba mais</h5>
-      <h2>Sobre mim</h2>
+      <h5>{i18n.t('about.knowMore')}</h5>
+      <h2>{i18n.t('about.aboutMe')}</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -22,8 +23,8 @@ const About = () => {
           <div className="about__cards">
             <article className='about__card'>
               <FaAward className='about__icon' />
-              <h5>Experiência</h5>
-              <small>+1 ano atuando na área</small>
+              <h5>{i18n.t('about.experience')}</h5>
+              <small>{i18n.t('about.experienceYears')}</small>
             </article>
 
             {/* <article className='about__card'>
@@ -40,10 +41,10 @@ const About = () => {
           </div>
 
           <p>
-            Meu nome é Lucas, tenho 23 anos. Amante de tecnologia e da programação. Desenvolvedor back-end com experiência em criação de Web API's.
+            {i18n.t('about.messageAboutMe')}
           </p>
 
-          <a href="#contact" className='btn btn-primary'>Me mande uma mensagem</a>
+          <a href="#contact" className='btn btn-primary'>{i18n.t('about.sendMeAMessage')}</a>
         </div>
       </div>
     </section>

@@ -58,7 +58,26 @@ header {
     font-size: 0.9rem;
 }
 
-/* SPIN */
+/*-------CHANGE LANGUAGE-------*/
+.change__language{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.select {
+    padding: 0.5rem 0.2rem;
+    border-radius: 0.7rem;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+
+/* -------------SPIN --------------*/
 .home-container{
     position: relative;
     min-height: 76vh;
