@@ -9,7 +9,8 @@ const messages = {
             },
             CTA: {
                 downloadCV: 'Download CV',
-                letsTalk: `Let's Talk`
+                letsTalk: `Let's Talk`,
+                CV: 'cven'
             },
             about: {
                 knowMore: 'Know more',
