@@ -13,7 +13,7 @@ const messages = {
                 CV: 'cven'
             },
             about: {
-                knowMore: 'Know more',
+                knowMore: 'Get To Know',
                 aboutMe: 'About me',
                 experience: 'Experience',
                 experienceYears: '1+ years working',
